@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mp3 Player</title>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="player">
+                <img src="img/record.png" alt="record" class="record">
+                <h2 id="title">red</h2>
+                <div class="slidecontainer">
+                    <i class="fa-solid fa-volume-low"></i>
+                    <input type="range" min="0" max="100" value="50" class="slider">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="controls">
+                    <button class="prev" id="prev"><i class="fa-solid fa-backward-step"></i></button>
+                    <button class="play-pause" id="play-pause"><i class="fa-solid fa-play"></i></button>
+                    <button class="next" id="next"><i class="fa-solid fa-forward-step"></i></button>
+                </div>
+            </div>
+
+
+
+            <div class="playlist">
+                <h2>Playlist</h2>
+                <ul class="song-list">
+                    <li data-src="music/one.mp3" data-name="first" data-index="0" ><span>first</span>02:25<span></span></li>
+                    <li data-src="music/two.mp3" data-name="two" data-index="1"><span>second</span>06:25<span></span></li>
+                    <li data-src="music/three.mp3" data-name="three" data-index="2"><span>third</span>05:25<span></span></li>
+                    <li data-src="music/four.mp3" data-name="fourth" data-index="3"><span>fourth</span>04:25<span></span></li>
+                    <li data-src="music/five.mp3" data-name="fifth" data-index="4"><span>fifth</span>05:25<span></span></li>
+                </ul>
+                <audio src="" id="audio"></audio>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
